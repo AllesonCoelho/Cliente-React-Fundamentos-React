@@ -1,10 +1,13 @@
 import React from 'react'
+import './app.css'
 import Aleatorio from './components/basicos/aleatorio'
 import ComParametro from './components/basicos/com_parametro'
 import Primeiro from './components/basicos/primeiro'
 import Fragmento from './components/basicos/fragmento'
 import Card from './components/layouts/card'
-import './app.css'
+import Familia from './components/basicos/familia'
+
+
 
 
 export default () => {
@@ -13,7 +16,12 @@ export default () => {
             <h1></h1>
 
             <div className="Cards">
-                <Card titulo="004 Aleaotorio" color="#FA6900">
+
+            <Card titulo="#005 Componentes com filhos" color="#00C8F8">
+                    <Familia sobrenome="Ferreira"/>
+                </Card>
+
+                <Card titulo="#004 Aleaotorio" color="#FA6900">
                     <Aleatorio min={1} max={30} />
                 </Card>
 
