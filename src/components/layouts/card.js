@@ -2,9 +2,15 @@ import Card from './card.css'
 import React from 'react'
 
 
-export default props =>{
+export default (props) =>{
+
+    const cardStyle ={
+        backgroundColor: props.color || '#F00',
+        borderColor: props.color || '#F00'
+
+    }
     return(
-        <div className="Card"> Conteudo
+        <div className="Card" style={cardStyle}> Conteudo
             <div className="Title">{props.titulo}</div>
             <div className="Content">{props.children}</div>
         </div>
