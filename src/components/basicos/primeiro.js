@@ -1,3 +1,10 @@
+import React from 'react'
 export default function primeira(){
-    return 'Primeiro comando'
+    const msg = 'seja bem vindo'
+    return (
+        <div>
+            <h2>Primeiro component</h2>
+            <p>{msg}</p>
+        </div>
+    )
 }
