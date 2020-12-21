@@ -6,6 +6,7 @@ import Primeiro from './components/basicos/primeiro'
 import Fragmento from './components/basicos/fragmento'
 import Card from './components/layouts/card'
 import Familia from './components/basicos/familia'
+import FamiliaMembro from './components/basicos/familiamembro'
 
 
 
@@ -18,7 +19,12 @@ export default () => {
             <div className="Cards">
 
             <Card titulo="#005 Componentes com filhos" color="#00C8F8">
-                    <Familia sobrenome="Ferreira"/>
+                    <Familia sobrenome="Ferreira">
+                    <FamiliaMembro nome="Pedro"/>
+                    <FamiliaMembro nome="Gustavo"/>
+                    <FamiliaMembro nome="Ana"/>
+                    </Familia>
+                    
                 </Card>
 
                 <Card titulo="#004 Aleaotorio" color="#FA6900">
