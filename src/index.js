@@ -1,4 +1,11 @@
+import './index.css'
 import ReactDOM from 'react-dom';
+import React from 'react'
 
-const el = document.getElementById('root')
-ReactDOM.render('Teste react', el)
+import Primeiro from './components/basicos/primeiro'
+
+ReactDOM.render(<div>
+    <Primeiro></Primeiro>
+                </div>,
+                document.getElementById('root')
+)
