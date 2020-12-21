@@ -1,10 +1,10 @@
 import React, {cloneElement} from 'react'
 
-export default props =>{
+export default (props) =>{
     return(
         <div>
             {
-                props.children((child, i) => {
+                props.children.map((child, i) => {
                     return cloneElement(child, {...props, key : i})
                 })
             

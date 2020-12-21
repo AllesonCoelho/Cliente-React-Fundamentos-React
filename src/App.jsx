@@ -1,12 +1,17 @@
 import React from 'react'
 import './app.css'
+
+
+import ListaAlunos from './components/repeticao/lista_alunos'
+import Familia from './components/basicos/familia'
+import FamiliaMembro from './components/basicos/familiamembro'
+
 import Aleatorio from './components/basicos/aleatorio'
 import ComParametro from './components/basicos/com_parametro'
 import Primeiro from './components/basicos/primeiro'
 import Fragmento from './components/basicos/fragmento'
 import Card from './components/layouts/card'
-import Familia from './components/basicos/familia'
-import FamiliaMembro from './components/basicos/familiamembro'
+
 
 
 
@@ -17,6 +22,10 @@ export default () => {
             <h1></h1>
 
             <div className="Cards">
+
+            <Card titulo="#006 Repeticao" color="#00C8F8">
+                    <ListaAlunos></ListaAlunos>
+                </Card>
 
             <Card titulo="#005 Componentes com filhos" color="#00C8F8">
                     <Familia sobrenome="Ferreira">
