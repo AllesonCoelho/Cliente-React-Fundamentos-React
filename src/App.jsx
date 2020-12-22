@@ -1,7 +1,7 @@
 import React from 'react'
 import './app.css'
 
-
+import IndiretaPai from './components/comunicao/indireta_pai'
 import DiretaPai from './components/comunicao/direta_pai'
 import UsarioInfo from './components/condicional/usuario_info'
 import ParImpar from './components/condicional/par_impar'
@@ -20,12 +20,17 @@ import Card from './components/layouts/card'
 
 
 
+
 export default () => {
     return (
         <div className="App">
             <h1></h1>
 
             <div className="Cards">
+                <Card titulo="#010 Comunicao Indireta" color="#8BAD39">
+                    <IndiretaPai></IndiretaPai>
+
+                </Card>
 
 
                 <Card titulo="#009 Comunicao Direta" color="#59323C">
