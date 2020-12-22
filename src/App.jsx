@@ -29,7 +29,8 @@ export default () => {
             <Card titulo="#008 Renderizacao Condicional" color="#982395">
                     <ParImpar numero={20}></ParImpar>
                     <UsarioInfo usuario={{nome: 'Fernando'}}/>
-                    <UsarioInfo usuario={{email: 'fe@nando.com'}}/>
+                    <UsarioInfo usuario={{}}/>
+                    <UsarioInfo/>
                 </Card>
 
 
