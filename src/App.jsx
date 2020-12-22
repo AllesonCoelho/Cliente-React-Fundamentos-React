@@ -2,6 +2,7 @@ import React from 'react'
 import './app.css'
 
 
+import DiretaPai from './components/comunicao/direta_pai'
 import UsarioInfo from './components/condicional/usuario_info'
 import ParImpar from './components/condicional/par_impar'
 import TabelaProdutos from './components/repeticao/tabela_produtos'
@@ -26,29 +27,36 @@ export default () => {
 
             <div className="Cards">
 
-            <Card titulo="#008 Renderizacao Condicional" color="#982395">
-                    <ParImpar numero={20}></ParImpar>
-                    <UsarioInfo usuario={{nome: 'Fernando'}}/>
-                    <UsarioInfo usuario={{}}/>
-                    <UsarioInfo/>
+
+                <Card titulo="#009 Comunicao Direta" color="#59323C">
+                    <DiretaPai></DiretaPai>
+
                 </Card>
 
 
-            <Card titulo="#007 Repeticao" color="#3A9AD9">
+                <Card titulo="#008 Renderizacao Condicional" color="#982395">
+                    <ParImpar numero={20}></ParImpar>
+                    <UsarioInfo usuario={{ nome: 'Fernando' }} />
+                    <UsarioInfo usuario={{}} />
+                    <UsarioInfo />
+                </Card>
+
+
+                <Card titulo="#007 Repeticao" color="#3A9AD9">
                     <TabelaProdutos></TabelaProdutos>
                 </Card>
 
-            <Card titulo="#006 Repeticao" color="#FF4C65">
+                <Card titulo="#006 Repeticao" color="#FF4C65">
                     <ListaAlunos></ListaAlunos>
                 </Card>
 
-            <Card titulo="#005 Componentes com filhos" color="#00C8F8">
+                <Card titulo="#005 Componentes com filhos" color="#00C8F8">
                     <Familia sobrenome="Ferreira">
-                    <FamiliaMembro nome="Pedro"/>
-                    <FamiliaMembro nome="Gustavo"/>
-                    <FamiliaMembro nome="Ana"/>
+                        <FamiliaMembro nome="Pedro" />
+                        <FamiliaMembro nome="Gustavo" />
+                        <FamiliaMembro nome="Ana" />
                     </Familia>
-                    
+
                 </Card>
 
                 <Card titulo="#004 Aleaotorio" color="#FA6900">
